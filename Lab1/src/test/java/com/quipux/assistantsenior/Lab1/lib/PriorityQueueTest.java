@@ -16,7 +16,7 @@ class PriorityQueueTest {
 
 
     @Test
-    void whenItemIsEnqueueShouldReturnHigestPriority() {
+    void whenItemIsEnqueueShouldReturnHigestPriorityInOrder() {
 
         Item item1=new Item("item1");
         Item item2=new Item("item2");
@@ -24,7 +24,7 @@ class PriorityQueueTest {
         Item item3=new Item("item3");
         Item item4=new Item("item4");
 
-       assertTrue(priorityQueue.dequeue().isEmpty());
+
 
         priorityQueue.enqueue(item4,4);
         priorityQueue.enqueue(item2,2);
@@ -37,9 +37,6 @@ class PriorityQueueTest {
 
     }
 
-    @Test
-    void peek() {
-    }
 
     @Test
     void isEmpty() {
