@@ -33,7 +33,7 @@ class PriorityQueueTest {
 
         assertEquals(item2.getName(),priorityQueue.dequeue().get().getName());
         assertEquals(item21.getName(),priorityQueue.dequeue().get().getName());
-       assertEquals(item3.getName(),priorityQueue.dequeue().get().getName());
+        assertEquals(item3.getName(),priorityQueue.dequeue().get().getName());
 
     }
 

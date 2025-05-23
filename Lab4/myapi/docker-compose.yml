@@ -1,0 +1,86 @@
+services:
+#  your_api:
+#    build: ./
+#    depends_on:
+#      postgres:
+#        condition: service_healthy
+#      rabbitmq:
+#        condition: service_healthy
+#
+#    networks:
+#       api_network:
+#         ipv4_address: 172.20.0.6
+#
+#    environment:
+#      DB_SYNC: true # uniquement pr lexercice ne pas faire en situation reelle en production
+#      THIRD_PARTY_URL: http://localhost:3000/transaction
+#      THIRD_PARTY_API_TIMEOUT: 2000
+#      WEB_HOOK_URL: http://localhost:5000/transaction/webhook
+#      TRANS_OK_MESSAGE: 'Votre transaction a ete traitee avec succes'
+#      TRANS_PENDING_MESSAGE: 'Votre transaction est en cours de traitement'
+#      TRANS_ERROR_MESSAGE: 'Votre transaction a ete rejetee'
+#      TRANS_NOTFOUND_MESSAGE: 'id de transaction introuvable'
+#      DB_HOST: 172.20.0.12
+#      DB_USER: 'admin'
+#      DB_PASSWORD: 'admin@12345'
+#      DB_DATABASE: 'transactions'
+#      DB_PORT: 5432
+#    ports:
+#      - "5000:5000"
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: 'rabbitmq'
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+      - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+    healthcheck:
+      test: rabbitmq-diagnostics check_port_connectivity
+      interval: 30s
+      timeout: 30s
+      retries: 3
+
+    networks:
+       api_network:
+         ipv4_address: 172.20.0.11
+
+
+  postgres:
+    image: postgres:16
+    container_name: my_postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin@12345
+      POSTGRES_DB: transactions
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ 'CMD-SHELL', 'pg_isready -U admin -d transactions' ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      api_network:
+        ipv4_address: 172.20.0.12
+
+
+
+volumes:
+  postgres_data:
+
+networks:
+  api_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
+          gateway: 172.20.0.1
+#networks:
+#  rabbitmq_go_net:
+#    external:
+#      name: custom
