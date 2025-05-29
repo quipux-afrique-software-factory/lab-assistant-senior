@@ -1,6 +1,8 @@
 # lab-assistant-senior
 Ce dossier contient 4 Lab pour le test d' assistant Logiciel Senior Quipux Afrique
+
 Le test dure 3h de temps
+
 Les candidats doivent cloner le repository sur leur Ordinateur et effectuer les differents exercices
 
 A la fin du temps imparti, les candidats  peuvent :
