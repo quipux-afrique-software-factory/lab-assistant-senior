@@ -1,4 +1,4 @@
-# Lab 3
+# Lab 3 (20 mn)
 
 
 ### Enoncé de l' exercice
