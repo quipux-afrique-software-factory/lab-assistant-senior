@@ -13,85 +13,48 @@ services:
       interval: 30s
       timeout: 30s
       retries: 3
-    networks:
-      api_network:
-        ipv4_address: 172.20.0.11
+
   postgres:
     image: postgres:16
     container_name: my_postgres
     environment:
       POSTGRES_USER: admin
-      POSTGRES_PASSWORD: admin@12345
-      POSTGRES_DB: transactions
+      POSTGRES_PASSWORD: zrk@12345
+      POSTGRES_DB: payment_amendes
     ports:
       - '5432:5432'
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: [ 'CMD-SHELL', 'pg_isready -U admin -d transactions' ]
+      test: [ 'CMD-SHELL', 'pg_isready -U admin -d payment_amendes' ]
       interval: 10s
       timeout: 5s
       retries: 5
     restart: unless-stopped
-    networks:
-      api_network:
-        ipv4_address: 172.20.0.12
 
-  thirdparty:
-    build: ./thirdpartymock
-    ports:
-      - "3000:3000"
-    networks:
-      api_network:
-        ipv4_address: 172.20.0.7
 
-  client:
-    build: ./client
-    environment:
-      YOUR_API: "http://172.20.0.6:5000" # replace with your new API
-    ports:
-      - "3100:3100"
-    networks:
-      api_network:
-        ipv4_address: 172.20.0.8
-
-  your_api:
-    build: ./your_api
+  mockapi:
+    build: ./mock_api
     depends_on:
       postgres:
         condition: service_healthy
       rabbitmq:
         condition: service_healthy
-      thirdparty:
-        condition: service_started
-      client:
-        condition: service_started
-    environment:
-      DB_SYNC: true # uniquement pr lexercice ne pas faire en situation reelle en production
-      THIRD_PARTY_URL: http://172.20.0.7:3000/transaction
-      THIRD_PARTY_API_TIMEOUT: 2000
-      WEB_HOOK_URL: http://localhost:5000/transaction/webhook
-      TRANS_OK_MESSAGE: 'Votre transaction a ete traitee avec succes'
-      TRANS_PENDING_MESSAGE: 'Votre transaction est en cours de traitement'
-      TRANS_ERROR_MESSAGE: 'Votre transaction a ete rejetee'
-      TRANS_NOTFOUND_MESSAGE: 'id de transaction introuvable'
-      DB_HOST: 172.20.0.12
-      DB_USER: 'admin'
-      DB_PASSWORD: 'admin@12345'
-      DB_DATABASE: 'transactions'
-      DB_PORT: 5432
     ports:
-      - "5000:5000"
-    networks:
-      api_network:
-        ipv4_address: 172.20.0.6
+      - "3000:3000"
+
+#  your_api:
+#    build: ./your_api
+#    depends_on:
+#      postgres:
+#        condition: service_healthy
+#      rabbitmq:
+#        condition: service_healthy
+#      mockapi:
+#        condition: service_started
+#    ports:
+#      - "8080:8080"
+
 volumes:
   postgres_data:
 
-networks:
-  api_network:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 172.20.0.0/24
-          gateway: 172.20.0.1
