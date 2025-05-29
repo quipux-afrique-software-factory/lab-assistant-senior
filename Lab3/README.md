@@ -1,4 +1,4 @@
-# Lab 3 (20 mn)
+# Lab 3 
 
 
 ### Enoncé de l' exercice
@@ -15,6 +15,6 @@ Refactorez le code de la classe Lab3 applications en se basant sur les principes
 
 
 ### Contraintes
-Ce test est à realiser en normalement 30 minutes:
+Ce test est à realiser en normalement 20 minutes:
 
 

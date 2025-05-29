@@ -1,4 +1,4 @@
-# Lab 2
+# Lab 2  
 
 
 ### Enoncé de l' exercice
@@ -18,6 +18,6 @@ Refactorez le code de la classe Utilisateur en se basant sur les principes solid
 
 
 ### Contraintes
-Ce test est à realiser en normalement 30 minutes:
+Ce test est à realiser en normalement 25 minutes:
 
 
