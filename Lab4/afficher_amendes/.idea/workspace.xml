@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="03709172-4d52-4d55-9286-1aadec0df0b3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mock_api/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../mock_api/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/afficher_amendes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../mock_api/.idea/afficher_amendes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mock_api/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mock_api/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mock_api/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mock_api/.idea/runConfigurations/bin_www.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mock_api/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../mock_api/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/../mock_api/bin/www" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../mock_api/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../mock_api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../mock_api/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/error.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../display_amendes/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../display_amendes/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../display_amendes/.idea/display_amendes.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../display_amendes/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../display_amendes/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../display_amendes/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../display_amendes/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../display_amendes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../display_amendes/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../display_amendes/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock_orangemoney/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock_orangemoney/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock_orangemoney/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock_orangemoney/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock_orangemoney/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapi/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../your_api/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapi/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../your_api/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapi/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../your_api/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapi/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../your_api/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapi/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../your_api/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapi/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../your_api/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapi/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/../your_api/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapi/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../your_api/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../your_api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapi/src/main/java/com/assitantsenior/lab4_myapi/Lab4MyapiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../your_api/src/main/java/com/assitantsenior/lab4_myapi/Lab4MyapiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapi/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../your_api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapi/src/test/java/com/assitantsenior/lab4_myapi/Lab4MyapiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../your_api/src/test/java/com/assitantsenior/lab4_myapi/Lab4MyapiApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pay_amendes/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pay_amendes/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pay_amendes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pay_amendes/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pay_amendes/package.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2xiWpnbDr7Z3qY7FIBq3nWcaHQO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/lab-assistant-senior/lab-assistant-senior/Lab4/mock_api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Docker.mock_api/Dockerfile">
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mock_api/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="mock_api" />
+          <option name="containerName" value="mock_api" />
+          <option name="sourceFilePath" value="../mock_api/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.mock_api/Dockerfile" />
+      <item itemvalue="Node.js.bin\www" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.mock_api/Dockerfile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03709172-4d52-4d55-9286-1aadec0df0b3" name="Changes" comment="" />
+      <created>1748421559827</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748421559827</updated>
+      <workItem from="1748421560829" duration="22393000" />
+      <workItem from="1748495177163" duration="427000" />
+      <workItem from="1748497838633" duration="7000" />
+      <workItem from="1748498086898" duration="1848000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
